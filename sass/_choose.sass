@@ -14,11 +14,16 @@
         padding: 60px
         max-height: 850px
         border: 1px solid rgba(246, 246, 246, 1)
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        &:hover
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            .item-content__btn
+                background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%)
+                box-shadow: 0px 20px 30px rgba(98, 214, 179, 0.3)
 .item-img
     display: block
-    margin: auto
-    margin-bottom: 125px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 20px
 .item-content
     &__name
         font-family: 'Museo Sans 900 Black'
@@ -27,5 +32,8 @@
         text-align: center
     &__description
         margin-bottom: 75px
+        line-height: 1.75
     &__btn
         background: #F5F5F5
+        box-shadow: none
+        &:hover
