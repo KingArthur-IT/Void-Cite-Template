@@ -185,34 +185,91 @@
         </section>
         <section class="section container reviews">
             <h2 class="title reviews__title">Отзывы</h2>
-            <div class="reviews-slider">
-                <div class="reviews-slider__item">
-                    <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                    <p class="reviews__text">
-                        A weekly round-up for Web and app developers the mobile-facing Web and native app.
-                    </p>
-                    <h3 class="title reviews__name">Castrol</h3>
-                    <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
+            <div class="reviews__wrapper">
+                <img src="./img/left-arrow.png" alt="" class="reviews__arrow" id = "prev-review">
+                <div class="reviews-slider">
+                    <div class="reviews-slider__item">
+                        <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
+                        <p class="reviews__text">
+                            A weekly round-up for Web and app developers the mobile-facing Web and native app.
+                        </p>
+                        <h3 class="title reviews__name">Castrol</h3>
+                        <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
+                    </div>
+                    <div class="reviews-slider__item">
+                        <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
+                        <p class="reviews__text">
+                            A weekly round-up for Web and app developers the mobile-facing Web and native app.
+                        </p>
+                        <h3 class="title reviews__name">Castrol</h3>
+                        <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
+                    </div>
+                    <div class="reviews-slider__item">
+                        <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
+                        <p class="reviews__text">
+                            A weekly round-up for Web and app developers the mobile-facing Web and native app.
+                        </p>
+                        <h3 class="title reviews__name">Castrol</h3>
+                        <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
+                    </div>
                 </div>
-                <div class="reviews-slider__item">
-                    <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                    <p class="reviews__text">
-                        A weekly round-up for Web and app developers the mobile-facing Web and native app.
-                    </p>
-                    <h3 class="title reviews__name">Castrol</h3>
-                    <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
-                </div>
-                <div class="reviews-slider__item">
-                    <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                    <p class="reviews__text">
-                        A weekly round-up for Web and app developers the mobile-facing Web and native app.
-                    </p>
-                    <h3 class="title reviews__name">Castrol</h3>
-                    <img src="./img/companies/1c-bitrix-logo.png" alt="logo" class="reviews__logo">
-                </div>
+                <img src="./img/right-arrow.png" alt="" class="reviews__arrow" id = "next-review">
             </div>
         </section>
+        <section class="section breef">
+            <div class="container">
+                <h2 class="title breef__title">Оставьте заявку</h2>
+                <div class="breef-slider">
+                    <div class="breef-slider__head">
+                        <h3 class="breef-slider__title">
+                            Заполните небольшой бриф и получите рассчет стоимости Вашего приложения
+                        </h3>
+                        <span class="breef-slider__number">1/4</span>
+                    </div>
+                    <div class="breef-slider__body">
+                        <h3 class="breef-slider__question">
+                            Приложение нужно для действущего бизнеса или стартапа?
+                        </h3>
+                        <div class="breef-slider__answer">
+                            <input type="radio" name="breef-answer" id="" class="breef-slider__radio">
+                            <span class="breef-slider__answer-text">Действущий бизнес</span>
+                        </div>
+                        <div class="breef-slider__answer">
+                            <input type="radio" name="breef-answer" id="" class="breef-slider__radio">
+                            <span class="breef-slider__answer-text">Стартап</span>
+                        </div>
+                    </div>
+                    <div class="breef-slider__btns">
+                        <input type="button" value="Назад" class="btn breef-slider__btn">
+                        <input type="button" value="Далее" class="btn breef-slider__btn">
+                    </div>
+                </div>
+            </div>            
+        </section>
     </main>
+    <footer class="section container footer">
+        <div class="footer__contacts">
+            <h2 class="title footer__title">
+                Есть проект? Напишите нам!
+            </h2>
+            <a href="tel:+994506975483" class="footer__tel">+994 50 697 54 83</a>
+            <a href="mailto:hello@void.com" class="footer__email">hello@void.com</a>
+            <div class="footer__wrapper">
+                <div class="footer__socials">
+                    <div class="footer__social-item">
+                        <img src="./img/socials/Fb.png" alt="FB">
+                    </div>
+                    <div class="footer__social-item">
+                        <img src="./img/socials/Insta.png" alt="Insta">
+                    </div>
+                    <div class="footer__social-item">
+                        <img src="./img/socials/Telega.png" alt="Telegram">
+                    </div>
+                </div>
+                <span class="footer__copyright">(c) 2020</span>
+            </div>
+        </div>
+    </footer>
     <script src="./js/jQuery.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
