@@ -1,27 +1,30 @@
-.header
-    height: 1020px
-    max-height: 1020px
-    background: url('../img/header-bg.png') right no-repeat
 .menu
     display: flex
     justify-content: space-between
     align-items: center
     height: 100px
-    padding: 50px 10px 0px
-    margin-bottom: 175px
+    padding: 50px auto
+    background-color: rgba(248, 248, 248, 1)
     &__logo
         width: 100px
         height: 37px
     &__btn
         background-color: transparent
         border: none
-        outline: none
         cursor: pointer
+.header
+    height: 1020px
+    max-height: 1020px
+    background: url('../img/header-bg.png') right top no-repeat
+    background-size: 100%
+    background-color: rgba(248, 248, 248, 1)
+    padding-top: 75px
 .burger-img
     width: 50px
     height: 25px
 .header-hero
     max-width: 900px
+    width: 80%
     font-family: 'Museo Sans 300 Light'
     &__title
         font-family: 'Museo Sans 900 Black'
@@ -32,3 +35,51 @@
         margin-bottom: 60px
         width: 85%
     &__btn
+@media screen and ( max-width: 1600px )
+    .header
+        height: auto
+    .header-hero
+        width: 70%
+    .header-hero
+        &__title
+            margin-bottom: 40px
+        &__subtitle
+            font-size: 24px
+            margin-bottom: 40px
+            width: 100%
+        &__btn
+            margin-bottom: 100px
+@media screen and ( max-width: 1300px )
+    .header-hero
+        width: 80%
+@media screen and ( max-width: 640px )
+    .menu
+        background-color: #fff
+        margin-bottom: 0px
+    .header
+        height: auto
+        background: url('../img/header-bg-xs.png') top no-repeat
+        background-size: 100%
+        background-color: rgba(248, 248, 248, 1)
+        padding-top: 60%
+    .header-hero
+        width: 100%
+        &__title
+            font-size: 70px
+            margin-bottom: 45px
+        &__subtitle
+            font-size: 22px
+            margin-bottom: 60px
+            width: 100%
+@media screen and ( max-width: 550px )
+    .header-hero
+        &__title
+            font-size: 56px
+        &__subtitle
+            font-size: 22px
+@media screen and ( max-width: 420px )
+    .header-hero
+        &__title
+            font-size: 42px
+        &__subtitle
+            font-size: 18px

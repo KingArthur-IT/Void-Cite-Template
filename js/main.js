@@ -9,10 +9,29 @@ $(document).ready(function () {
     },
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false
+    arrows: false,
+    responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2
+      }
+      },
+      {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1
+      }
+      }
+    ]
   });
 
-  $('.cases-slider-radio:first').prop("checked", true);
+  $('li.slick-active').has('input.cases-slider-radio').children().prop("checked", true);
+  $(".cases-slider").on("beforeChange", function (){
+    $('li.slick-active').has('input.cases-slider-radio').children().prop("checked", true);
+  })
+  
+
 
   $('.reviews-slider').slick({
     dots: true,
@@ -29,5 +48,55 @@ $(document).ready(function () {
     nextArrow: $('#next-review')
   });
 
-  $('.reviews-slider-radio:first').prop("checked", true);
+  $('li.slick-active').has('input.reviews-slider-radio').children().prop("checked", true);
+  $(".reviews-slider").on("beforeChange", function (){
+    $('li.slick-active').has('input.reviews-slider-radio').children().prop("checked", true);
+  })
+
+  $( window ).resize(function() {
+      if (window.innerWidth < 641) {
+      $('.clients__wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        adaptiveHeight: true,
+        customPaging: function (slider) {
+          return '<input type="radio" name="clients-radio" class="clients-slider-radio">';
+        },
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      });
+    }
+  });
+  if (window.innerWidth < 641) {
+    $('.clients__wrapper').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      adaptiveHeight: true,
+      customPaging: function (slider) {
+        return '<input type="radio" name="clients-radio" class="clients-slider-radio">';
+      },
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+  }
+  $('li.slick-active').has('input.clients-slider-radio').children().prop("checked", true);
+  $(".clients__wrapper").on("beforeChange", function (){
+    $('li.slick-active').has('input.clients-slider-radio').children().prop("checked", true);
+  })
+
+  function demoLockup() {
+    Swal.fire({
+        icon: 'info',
+        title: 'Это демо-версия сайта',
+        text: 'Этот сайт лишь "лицевая" часть некоторого проекта, поэтому в нем ограничены некоторые функции.'
+    })
+    }
+
+  $('.lock').on('click', function () {
+          demoLockup();
+      });
 });

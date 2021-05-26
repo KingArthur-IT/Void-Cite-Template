@@ -10,7 +10,7 @@
     justify-content: space-between
     background: #fff
     &__head
-        height: 120px
+        min-height: 120px
         padding: 50px
         border-bottom: 2px solid $bgColor
         display: flex
@@ -38,3 +38,31 @@
     &__btn
         font-family: 'Museo Sans 500 Medium'
         margin-left: 20px
+@media screen and ( max-width: 1600px )
+    .breef
+        padding-top: 100px
+        padding-bottom: 100px
+@media screen and ( max-width: 1000px )
+    .breef-slider
+        &__number
+            display: none
+@media screen and ( max-width: 800px )
+    .breef-slider
+        &__btns
+            display: flex
+            justify-content: space-between
+            align-self: stretch
+            //padding: 50px 0px
+        &__btn
+            padding: 18px 30px
+            margin-left: 0px
+@media screen and ( max-width: 450px )
+    .breef-slider
+        &__btns
+            flex-direction: column
+        &__btn
+            margin-bottom: 10px
+        &__title
+            font-size: 24px
+        &__question
+            font-size: 18px

@@ -8,6 +8,7 @@
         flex-wrap: wrap
     &__item
         flex-basis: 20%
+        width: 20%
         padding: 25px
         border-right: 2px solid #F8F8F8
         &:nth-child(5n)
@@ -18,3 +19,40 @@
     &__img
         display: block
         margin: auto
+@media screen and ( max-width: 1600px )
+    .clients__item
+        flex-basis: 25%
+        width: 20%
+        padding: 25px
+        border-right: 2px solid #F8F8F8
+        border-bottom: 2px solid #F8F8F8
+        &:nth-child(4n)
+            padding-right: 0px
+            border-right: none
+        &:nth-child(9), &:nth-child(10),
+            border-bottom: none
+        &:nth-child(5n)
+            border-right: 2px solid #F8F8F8
+@media screen and ( max-width: 1450px )
+    .clients
+        &__item
+            flex-basis: 25%
+            width: 25%
+            &:nth-child(n)
+                border: none
+@media screen and ( max-width: 1200px )
+    .clients
+        &__item
+            flex-basis: 33%
+            width: 33%
+@media screen and ( max-width: 900px )
+    .clients
+        &__item
+            flex-basis: 50%
+            width: 50%
+@media screen and ( max-width: 640px )
+    .clients
+        padding-top: 100px
+        padding-bottom: 100px
+        &__title
+            margin-bottom: 100px

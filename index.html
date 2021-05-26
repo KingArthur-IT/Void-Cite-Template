@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
     <title>Void</title>
 </head>
 <body>
-    <header class = "section header">
-        <div class="container">
-            <div class="menu">
-                <img src="./img/Logo.png" alt="Void logo" class="menu__logo">
-                <button class="menu__btn">
-                    <img src="./img/menu-btn.svg" alt="" class="burger-img">
-                </button>
-            </div>
+    <header class = "section">
+        <div class="container menu">
+            <img src="./img/Logo.png" alt="Void logo" class="menu__logo">
+            <button class="lock menu__btn">
+                <img src="./img/menu-btn.svg" alt="" class="burger-img">
+            </button>
+        </div>
+        <div class="container header">            
             <div class="header-hero">
                 <h1 class="header-hero__title">
                     Разработка мобильных приложений и веб-сервисов
@@ -23,7 +24,7 @@
                     Повышаем лояльность и продажи, улучшаем сервис, снижаем расходы за счет автоматизации
                     и оптимизации бизнес-процессов с помощью мобильных приложений и веб-сервисов.
                 </h2>
-                <input type="button" value="Рассчитать проект" class="btn header-hero__btn">
+                <input type="button" value="Рассчитать проект" class="lock btn header-hero__btn">
             </div>
         </div>
     </header>
@@ -65,11 +66,11 @@
             <div class="container consultation__wrapper">
                 <div class="consultation__text">
                     <h2 class="title consultation__title">Получить консультацию</h2>
-                    <p class="consultation__description">
+                    <p class="text consultation__description">
                         Краткий текст, информация, описание акции или просто призыв к действию.
                     </p>
                 </div>
-                <input type="button" value="Рассчитать проект" class="btn consultation__btn">
+                <input type="button" value="Рассчитать проект" class="lock btn consultation__btn">
             </div>
         </section>
         <section class="section container work">
@@ -118,7 +119,7 @@
                             Ее можно запустить в подготовленной среде. Это не позволит проверить гипотезы на пользователях, но вы сможете
                             потестировать функционал и показать его инвесторам.
                         </p>
-                        <input type="button" value="Рассчитать проект" class="btn item-content__btn">
+                        <input type="button" value="Рассчитать проект" class="lock btn item-content__btn">
                     </div>
                 </div>
                 <div class="choose__item">
@@ -132,7 +133,7 @@
                             разработку фирменного стиля и всех интерфейсов, разработку мобильных приложений. После этого мы размещаем приложение на
                             AppStore, Google Play, продвигаем в сети, помогаем собирать и анализировать статистику.
                         </p>
-                        <input type="button" value="Рассчитать проект" class="btn item-content__btn">
+                        <input type="button" value="Рассчитать проект" class="lock btn item-content__btn">
                     </div>
                 </div>
                 <div class="choose__item">
@@ -143,7 +144,7 @@
                             Приложение с минимальным набором функционала, которое можно использовать на мобильных устройствах. К примеру,
                             мессенджер, с помощью которого можно только переписываться, но не обмениваться файлами и тому подобное.
                         </p>
-                        <input type="button" value="Рассчитать проект" class="btn item-content__btn">
+                        <input type="button" value="Рассчитать проект" class="lock btn item-content__btn">
                     </div>
                 </div>
             </div>
@@ -190,7 +191,7 @@
                 <div class="reviews-slider">
                     <div class="reviews-slider__item">
                         <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                        <p class="reviews__text">
+                        <p class="text reviews__text">
                             A weekly round-up for Web and app developers the mobile-facing Web and native app.
                         </p>
                         <h3 class="title reviews__name">Castrol</h3>
@@ -198,7 +199,7 @@
                     </div>
                     <div class="reviews-slider__item">
                         <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                        <p class="reviews__text">
+                        <p class="text reviews__text">
                             A weekly round-up for Web and app developers the mobile-facing Web and native app.
                         </p>
                         <h3 class="title reviews__name">Castrol</h3>
@@ -206,7 +207,7 @@
                     </div>
                     <div class="reviews-slider__item">
                         <img src="./img/reviews/photo.png" alt="reviews-1" class="reviews__img">
-                        <p class="reviews__text">
+                        <p class="text reviews__text">
                             A weekly round-up for Web and app developers the mobile-facing Web and native app.
                         </p>
                         <h3 class="title reviews__name">Castrol</h3>
@@ -231,7 +232,7 @@
                             Приложение нужно для действущего бизнеса или стартапа?
                         </h3>
                         <div class="breef-slider__answer">
-                            <input type="radio" name="breef-answer" id="" class="breef-slider__radio">
+                            <input type="radio" name="breef-answer" id="" class="breef-slider__radio" checked>
                             <span class="breef-slider__answer-text">Действущий бизнес</span>
                         </div>
                         <div class="breef-slider__answer">
@@ -240,8 +241,8 @@
                         </div>
                     </div>
                     <div class="breef-slider__btns">
-                        <input type="button" value="Назад" class="btn breef-slider__btn">
-                        <input type="button" value="Далее" class="btn breef-slider__btn">
+                        <input type="button" value="Назад" class="lock btn breef-slider__btn">
+                        <input type="button" value="Далее" class="lock btn breef-slider__btn">
                     </div>
                 </div>
             </div>            
@@ -256,13 +257,13 @@
             <a href="mailto:hello@void.com" class="footer__email">hello@void.com</a>
             <div class="footer__wrapper">
                 <div class="footer__socials">
-                    <div class="footer__social-item">
+                    <div class="lock footer__social-item">
                         <img src="./img/socials/Fb.png" alt="FB">
                     </div>
-                    <div class="footer__social-item">
+                    <div class="lock footer__social-item">
                         <img src="./img/socials/Insta.png" alt="Insta">
                     </div>
-                    <div class="footer__social-item">
+                    <div class="lock footer__social-item">
                         <img src="./img/socials/Telega.png" alt="Telegram">
                     </div>
                 </div>
@@ -273,5 +274,6 @@
     <script src="./js/jQuery.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
 </body>
 </html>
